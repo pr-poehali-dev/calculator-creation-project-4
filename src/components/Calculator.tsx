@@ -177,7 +177,14 @@ export default function Calculator() {
   };
 
   return (
-    <div className={`min-h-screen flex items-center justify-center p-4 transition-all duration-500 ${getThemeClass()}`}>
+    <div 
+      className={`min-h-screen flex items-center justify-center p-4 transition-all duration-500 bg-cover bg-center bg-no-repeat`}
+      style={{
+        backgroundImage: 'url(https://cdn.poehali.dev/files/0a0920fd-c19e-4752-bbc4-29c0036a57bf.jpg)',
+        backgroundColor: 'rgba(0, 0, 0, 0.3)',
+        backgroundBlendMode: 'overlay'
+      }}
+    >
       <div className="w-full max-w-md space-y-6 animate-fade-in">
         <div className="flex justify-between items-center mb-4">
           <h1 className={`text-3xl font-bold ${settings.theme === 'dark' ? 'text-white' : 'text-white'} drop-shadow-lg`}>
